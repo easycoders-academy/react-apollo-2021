@@ -30,6 +30,9 @@ const Column = styled.div`
 `;
 
 const Poster = styled.div`
+  background-image: url(${(props) => props.bg});
+  background-size: cover;
+  background-position: center center;
   width: 25%;
   height: 60%;
   background-color: transparent;
@@ -55,13 +58,13 @@ export default () => {
   return (
     <Container>
       <Column>
-        <Title>{data?.movie?.title}</Title>
+        <Title>{loading ? "Загрузка..." : data?.movie?.title}</Title>
         <Subtitle>
           {data?.movie?.language} · {data?.movie?.rating}
         </Subtitle>
         <Description>{data?.movie?.description_intro}</Description>
       </Column>
-      <Poster></Poster>
+      <Poster bg={data?.movie?.medium_cover_image}></Poster>
     </Container>
   );
 };
