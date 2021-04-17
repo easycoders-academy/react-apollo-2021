@@ -46,6 +46,15 @@ const Loading = styled.div`
   margin-top: 10px;
 `;
 
+const Movies = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+  width: 60%;
+  position: relative;
+  top: -50px;
+`;
+
 export default () => {
   const { loading, data } = useQuery(GET_MOVIES);
   return (
@@ -55,9 +64,13 @@ export default () => {
         <Subtitle>База фильмов на React, Apollo, GraphQL</Subtitle>
       </Header>
       {loading && <Loading>Загрузка...</Loading>}
-      {!loading &&
-        data?.movies &&
-        data.movies.map((m) => <Movie key={m.id} id={m.id} />)}
+      {!loading && data?.movies && (
+        <Movies>
+          {data.movies.map((m) => (
+            <Movie key={m.id} id={m.id} bg={m.medium_cover_image} />
+          ))}
+        </Movies>
+      )}
     </Container>
   );
 };
