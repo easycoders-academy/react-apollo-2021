@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/static/js/main.7ddbc407.chunk.js",
-    "main.js.map": "/static/js/main.7ddbc407.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.bc0e5fbc.js",
-    "runtime-main.js.map": "/static/js/runtime-main.bc0e5fbc.js.map",
-    "static/js/2.7e56266b.chunk.js": "/static/js/2.7e56266b.chunk.js",
-    "static/js/2.7e56266b.chunk.js.map": "/static/js/2.7e56266b.chunk.js.map",
-    "index.html": "/index.html",
-    "static/js/2.7e56266b.chunk.js.LICENSE.txt": "/static/js/2.7e56266b.chunk.js.LICENSE.txt"
+    "main.js": "/react-apollo-2021/static/js/main.7ddbc407.chunk.js",
+    "main.js.map": "/react-apollo-2021/static/js/main.7ddbc407.chunk.js.map",
+    "runtime-main.js": "/react-apollo-2021/static/js/runtime-main.e45d88c1.js",
+    "runtime-main.js.map": "/react-apollo-2021/static/js/runtime-main.e45d88c1.js.map",
+    "static/js/2.52a6d24f.chunk.js": "/react-apollo-2021/static/js/2.52a6d24f.chunk.js",
+    "static/js/2.52a6d24f.chunk.js.map": "/react-apollo-2021/static/js/2.52a6d24f.chunk.js.map",
+    "index.html": "/react-apollo-2021/index.html",
+    "static/js/2.52a6d24f.chunk.js.LICENSE.txt": "/react-apollo-2021/static/js/2.52a6d24f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.bc0e5fbc.js",
-    "static/js/2.7e56266b.chunk.js",
+    "static/js/runtime-main.e45d88c1.js",
+    "static/js/2.52a6d24f.chunk.js",
     "static/js/main.7ddbc407.chunk.js"
   ]
 }
