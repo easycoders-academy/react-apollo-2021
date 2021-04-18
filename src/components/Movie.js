@@ -5,7 +5,6 @@ const Container = styled.div`
   height: 380px;
   width: 100%;
   border-radius: 7px;
-  overflow: hidden;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 `;
 const Poster = styled.div`
@@ -16,10 +15,11 @@ const Poster = styled.div`
   background-position: center center;
 `;
 
-export default ({ id, bg }) => (
+export default ({ id, bg, isLiked }) => (
   <Container>
     <Link to={`/${id}`}>
       <Poster bg={bg} />
     </Link>
+    <button>{isLiked ? "Не нравится" : "Понравилось"}</button>
   </Container>
 );
